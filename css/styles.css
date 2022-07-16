@@ -13,10 +13,10 @@
 :root {
 	--primary-text-color: #757575;
 	--secondary-text-color: #212121;
-	--primary-background-color: #FFFFFF;
-	--secondary-background-color: #F5F4FA;
-	--tertiary-background-color: #2F303A;
-	--accent-color: #2196F3;
+	--primary-background-color: #ffffff;
+	--secondary-background-color: #f5f4fa;
+	--tertiary-background-color: #2f303a;
+	--accent-color: #2196f3;
 }
 
 body {
@@ -26,10 +26,6 @@ body {
 
 .logo {
 	color: #000000;
-}
-
-.logo-accent {
-	color: var(--accent-color);
 }
 
 .list {
@@ -46,6 +42,10 @@ body {
 .site-nav a:focus,
 .auth-nav a:hover,
 .auth-nav a:focus {
+	color: var(--accent-color);
+}
+
+.site-nav .current {
 	color: var(--accent-color);
 }
 
@@ -75,3 +75,17 @@ body {
 	color: var(--secondary-text-color);
 }
 
+/* button */
+
+.button {
+}
+
+.button.primary {
+	color: var(--primary-background-color);
+	background-color: var(--accent-color);
+}
+
+.button.secondary {
+	color: var(--secondary-text-color);
+	background-color: var(--secondary-background-color);
+}
