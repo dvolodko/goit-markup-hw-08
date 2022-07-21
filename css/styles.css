@@ -25,7 +25,6 @@ body {
 	color: var(--primary-text-color);
 	background-color: var(--primary-background-color);
 	font-family: Roboto, sans-serif;
-	letter-spacing: 0.03em;
 }
 
 .list {
@@ -33,14 +32,16 @@ body {
 }
 
 .section-title {
-	/* font-weight: 700; */
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
 }
 
-.list .title {
+.features-title,
+.team-title,
+.portfolio-title {
 	color: var(--secondary-text-color);
 }
 
@@ -51,6 +52,7 @@ body {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
+	letter-spacing: 0.03em;
 	color: var(--accent-color);
 	text-decoration: none;
 }
@@ -65,7 +67,7 @@ body {
 
 /* site nav */
 
-.site-nav a {
+.site-nav-link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -74,20 +76,22 @@ body {
 	text-decoration: none;
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.auth-nav a:hover,
-.auth-nav a:focus {
+.site-nav-link:hover,
+.site-nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus,
+.address-nav-link:hover,
+.address-nav-link:focus {
 	color: var(--accent-color);
 }
 
-.site-nav .current {
+.current {
 	color: var(--accent-color);
 }
 
 /* auth nav */
 
-.auth-nav a {
+.auth-nav-link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -114,45 +118,49 @@ body {
 
 /* features */
 
-.features .title {
+.features-title {
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+	letter-spacing: 0.03em;
 }
 
-.features .text {
+.features-text {
 	font-size: 14px;
 	line-height: 1.71;
+	letter-spacing: 0.03em;
 }
 
 /* team */
 
-.team .title {
+.team-title {
 	font-weight: 500;
 }
 
-.team .text,
-.team .title {
+.team-text,
+.team-title {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
+	letter-spacing: 0.03em;
 }
 
-.section.team {
+.team-section {
 	background-color: var(--secondary-background-color);
 }
 
 /* portfolio */
 
-.portfolio .title {
+.portfolio-title {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 }
 
-.portfolio .text {
+.portfolio-text {
 	font-size: 16px;
 	line-height: 1.88;
+	letter-spacing: 0.03em;
 }
 
 /* button */
@@ -163,10 +171,13 @@ body {
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+	background-color: var(--secondary-background-color);
 	cursor: pointer;
 }
 
-.button.hero {
+.hero-button {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
@@ -178,14 +189,10 @@ body {
 	background-color: var(--accent-color);
 }
 
-.button.primary {
+.button:hover,
+.button:focus {
 	color: var(--primary-background-color);
 	background-color: var(--accent-color);
-}
-
-.button.secondary {
-	color: var(--secondary-text-color);
-	background-color: var(--secondary-background-color);
 }
 
 /* footer */
@@ -194,14 +201,15 @@ body {
 	background-color: var(--tertiary-background-color);
 }
 
-.address-list a {
+.address-nav-link {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
+	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
 }
 
-.address-list .address {
+.address-accent {
 	color: var(--primary-background-color);
 }
