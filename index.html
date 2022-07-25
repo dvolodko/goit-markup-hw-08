@@ -11,67 +11,80 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 
 	<body>
 		<!-- Верхня лінія -->
 		<header class="page-header">
-			<nav>
-				<a href="./index.html" class="logo">Web<span class="logo-dark">Studio</span></a>
-				<ul class="site-nav list">
-					<li><a href="./index.html" class="site-nav-link current">Студія</a></li>
-					<li><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
-					<li><a href="" class="site-nav-link">Контакти</a></li>
+			<div class="container">
+				<nav>
+					<a href="./index.html" class="logo">Web<span class="logo-dark">Studio</span></a>
+					<ul class="site-nav list">
+						<li><a href="./index.html" class="site-nav-link current">Студія</a></li>
+						<li><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
+						<li><a href="" class="site-nav-link">Контакти</a></li>
+					</ul>
+				</nav>
+				<ul class="auth-nav list">
+					<li><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
+					<li><a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a></li>
 				</ul>
-			</nav>
-			<ul class="auth-nav list">
-				<li><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
-				<li><a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a></li>
-			</ul>
+			</div>
 		</header>
 		<main>
 			<!-- Герой -->
-			<section class="hero">
+			<section class="hero section-position">
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="button hero-button">Замовити послугу</button>
 			</section>
 			<!-- Особливості -->
 			<section class="section">
-				<h2 class="section-title">Особливості</h2>
-				<ul class="list">
-					<li>
-						<h3 class="features-title">Увага до деталей</h3>
-						<p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-					</li>
-					<li>
-						<h3 class="features-title">Пунктуальність</h3>
-						<p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-					</li>
-					<li>
-						<h3 class="features-title">Планування</h3>
-						<p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-					</li>
-					<li>
-						<h3 class="features-title">Сучасні технології</h3>
-						<p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-					</li>
-				</ul>
+				<div class="container section-position">
+					<h2 class="section-title visually-hidden">Особливості</h2>
+					<ul class="list">
+						<li>
+							<h3 class="features-title">Увага до деталей</h3>
+							<p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+						</li>
+						<li>
+							<h3 class="features-title">Пунктуальність</h3>
+							<p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+						</li>
+						<li>
+							<h3 class="features-title">Планування</h3>
+							<p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+						</li>
+						<li>
+							<h3 class="features-title">Сучасні технології</h3>
+							<p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<!-- Чим ми займаємося -->
 			<section class="section">
-				<h2 class="section-title">Чим ми займаємося</h2>
-				<ul class="list">
-					<li>
-						<img src="./images/expertise/img0.jpg" width="370" alt="Руки на клавіатурі" />
-					</li>
-					<li>
-						<img src="./images/expertise/img1.jpg" width="370" alt="Дівчина працює на ноутбуці" />
-					</li>
-					<li>
-						<img src="./images/expertise/img2.jpg" width="370" alt="Дизайнер з планшетом" />
-					</li>
-				</ul>
+				<div class="section-position">
+					<h2 class="section-title">Чим ми займаємося</h2>
+					<ul class="list">
+						<li>
+							<img src="./images/expertise/img0.jpg" width="370" alt="Руки на клавіатурі" />
+						</li>
+						<li>
+							<img src="./images/expertise/img1.jpg" width="370" alt="Дівчина працює на ноутбуці" />
+						</li>
+						<li>
+							<img src="./images/expertise/img2.jpg" width="370" alt="Дизайнер з планшетом" />
+						</li>
+					</ul>
+				</div>
 			</section>
 			<!-- Наша команда -->
 			<section class="section team-section">

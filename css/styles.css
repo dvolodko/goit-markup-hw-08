@@ -28,10 +28,13 @@ body {
 }
 
 .list {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 
 .section-title {
+	margin-bottom: 50px;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
@@ -43,6 +46,29 @@ body {
 .team-title,
 .portfolio-title {
 	color: var(--secondary-text-color);
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.section-position {
+	margin-bottom: 94px;
+}
+
+/* Header */
+
+.container {
+	outline: 2px solid red;
 }
 
 /* logo */
@@ -107,6 +133,8 @@ body {
 }
 
 .hero-title {
+	margin-top: 0;
+	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -119,6 +147,8 @@ body {
 /* features */
 
 .features-title {
+	margin-top: 0;
+	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
@@ -151,6 +181,11 @@ body {
 
 /* portfolio */
 
+.header-position,
+.portfolio-position {
+	margin-bottom: 94px;
+}
+
 .portfolio-title {
 	font-size: 18px;
 	line-height: 2;
@@ -175,11 +210,13 @@ body {
 	color: var(--secondary-text-color);
 	background-color: var(--secondary-background-color);
 	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	padding: 6px 22px;
 }
 
 .hero-button {
 	font-weight: 700;
-	font-size: 16px;
 	line-height: 1.88;
 	display: flex;
 	align-items: center;
@@ -187,12 +224,18 @@ body {
 	letter-spacing: 0.06em;
 	color: var(--primary-background-color);
 	background-color: var(--accent-color);
+	padding: 10px 32px;
 }
 
 .button:hover,
 .button:focus {
 	color: var(--primary-background-color);
 	background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background-color: #188ce8;
 }
 
 /* footer */
