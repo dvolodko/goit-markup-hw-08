@@ -209,6 +209,12 @@ body {
 	margin-right: 30px;
 }
 
+/* competencies */
+
+.competencies-flex {
+	display: flex;
+}
+
 /* team */
 
 .team-title {
