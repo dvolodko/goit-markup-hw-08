@@ -34,6 +34,7 @@ body {
 }
 
 .section-title {
+	margin-top: 0;
 	margin-bottom: 50px;
 	font-size: 36px;
 	line-height: 1.17;
@@ -71,6 +72,13 @@ body {
 	outline: 2px solid red;
 }
 
+.header-flex {
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* logo */
 
 .logo {
@@ -91,6 +99,10 @@ body {
 	color: var(--primary-background-color);
 }
 
+.header-logo {
+	margin-right: 93px;
+}
+
 /* site nav */
 
 .site-nav-link {
@@ -100,6 +112,8 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 	text-decoration: none;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 .site-nav-link:hover,
@@ -115,6 +129,15 @@ body {
 	color: var(--accent-color);
 }
 
+.site-nav,
+.auth-nav {
+	display: flex;
+}
+
+.header-nav:not(:last-child) {
+	margin-right: 50px;
+}
+
 /* auth nav */
 
 .auth-nav-link {
@@ -124,12 +147,19 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 	text-decoration: none;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.auth-nav {
+	margin-left: auto;
 }
 
 /* hero */
 
 .hero {
 	background-color: var(--tertiary-background-color);
+	text-align: center;
 }
 
 .hero-title {
@@ -186,7 +216,14 @@ body {
 	margin-bottom: 94px;
 }
 
+.portfolio-button-position {
+	margin-top: 0;
+	margin-bottom: 34px;
+}
+
 .portfolio-title {
+	margin-top: 0;
+	margin-bottom: 4px;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
@@ -218,9 +255,6 @@ body {
 .hero-button {
 	font-weight: 700;
 	line-height: 1.88;
-	display: flex;
-	align-items: center;
-	text-align: center;
 	letter-spacing: 0.06em;
 	color: var(--primary-background-color);
 	background-color: var(--accent-color);
