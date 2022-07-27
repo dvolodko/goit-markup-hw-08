@@ -62,17 +62,13 @@ body {
 	margin: -1px;
 }
 
-.section-position {
-	margin-bottom: 94px;
-}
-
 /* Header */
 
 .container {
 	outline: 2px solid red;
-	width: 1200px;
-	padding-left: 15px;
+	max-width: 1200px;
 	padding-right: 15px;
+	padding-left: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -80,8 +76,13 @@ body {
 .header-flex {
 	display: flex;
 	align-items: center;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
+.nav-header-flex {
+	display: flex;
+	align-items: center;
 }
 
 /* logo */
@@ -165,18 +166,19 @@ body {
 
 .hero {
 	padding-top: 200px;
-	padding-right: 452px;
+	/* padding-right: 452px; */
 	padding-bottom: 200px;
-	padding-left: 452px;
+	/* padding-left: 452px; */
 	background-color: var(--tertiary-background-color);
 	text-align: center;
-	width: 1600px;
-	height: 600px;
 }
 
 .hero-title {
 	margin-top: 0;
+	margin-right: auto;
 	margin-bottom: 30px;
+	margin-left: auto;
+	max-width: 696px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -187,6 +189,11 @@ body {
 }
 
 /* features */
+
+.features-position {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
 
 .features-title {
 	margin-top: 0;
@@ -215,10 +222,35 @@ body {
 	display: flex;
 }
 
+.competencies-position {
+	padding-bottom: 94px;
+}
+
+.competencies-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.image-convert {
+	display: block;
+}
+
 /* team */
+
+.team-position {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.team-list {
+	display: flex;
+}
 
 .team-title {
 	font-weight: 500;
+}
+
+.team-item:not(:last-child) {
+	margin-right: 30px;
 }
 
 .team-text,
