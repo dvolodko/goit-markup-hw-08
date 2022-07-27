@@ -267,14 +267,23 @@ body {
 
 /* portfolio */
 
-.header-position,
 .portfolio-position {
-	margin-bottom: 94px;
+	display: flex;
+	padding-top: 94px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .portfolio-button-position {
+	display: flex;
 	margin-top: 0;
+	margin-right: auto;
 	margin-bottom: 34px;
+	margin-left: auto;
+}
+
+.portfolio-btn:not(:last-child) {
+	margin-right: 8px;
 }
 
 .portfolio-title {
@@ -321,7 +330,7 @@ body {
 .button:focus {
 	color: var(--primary-background-color);
 	background-color: var(--accent-color);
-}
+	box-shadow: 0px 2px 4px #7f7f7f;
 
 .hero-button:hover,
 .hero-button:focus {

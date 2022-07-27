@@ -24,18 +24,18 @@
 	<body>
 		<!-- Верхня лінія -->
 		<header class="page-header">
-			<div class="container header-position">
-				<nav>
-					<a href="./index.html" class="logo">Web<span class="logo-dark">Studio</span></a>
+			<div class="container header-flex">
+				<nav class="nav-header-flex">
+					<a href="./index.html" class="logo header-logo">Web<span class="logo-dark">Studio</span></a>
 					<ul class="site-nav list">
-						<li><a href="./index.html" class="site-nav-link">Студія</a></li>
-						<li><a href="./portfolio.html" class="site-nav-link current">Портфоліо</a></li>
-						<li><a href="" class="site-nav-link">Контакти</a></li>
+						<li class="header-nav"><a href="./index.html" class="site-nav-link">Студія</a></li>
+						<li class="header-nav"><a href="./portfolio.html" class="site-nav-link current">Портфоліо</a></li>
+						<li class="header-nav"><a href="" class="site-nav-link">Контакти</a></li>
 					</ul>
 				</nav>
 				<ul class="auth-nav list">
-					<li><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a></li>
+					<li class="header-nav"><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
+					<li class="header-nav"><a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a></li>
 				</ul>
 			</div>
 		</header>
@@ -44,13 +44,15 @@
 			<section class="section portfolio">
 				<div class="container portfolio-position">
 					<h1 class="section-title visually-hidden">Портфоліо</h1>
-					<ul class="button-nav list portfolio-button-position">
-						<li><button type="button" class="button">Все</button></li>
-						<li><button type="button" class="button">Веб-сайти</button></li>
-						<li><button type="button" class="button">Застосунки</button></li>
-						<li><button type="button" class="button">Дизайн</button></li>
-						<li><button type="button" class="button">Маркетинг</button></li>
+					<ul class="list portfolio-button-position">
+						<li class="portfolio-btn"><button type="button" class="button">Все</button></li>
+						<li class="portfolio-btn"><button type="button" class="button">Веб-сайти</button></li>
+						<li class="portfolio-btn"><button type="button" class="button">Застосунки</button></li>
+						<li class="portfolio-btn"><button type="button" class="button">Дизайн</button></li>
+						<li class="portfolio-btn"><button type="button" class="button">Маркетинг</button></li>
 					</ul>
+				</div>
+				<div class="container">
 					<ul class="list">
 						<li>
 							<img src="./images/portfolio/portfolio0.jpg" alt="Технокряк" width="370" />
