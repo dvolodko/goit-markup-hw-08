@@ -27,13 +27,13 @@
 			<div class="container header-flex">
 				<nav class="nav-header-flex">
 					<a href="./index.html" class="logo header-logo">Web<span class="logo-dark">Studio</span></a>
-					<ul class="site-nav list">
+					<ul class="site-nav">
 						<li class="header-nav"><a href="./index.html" class="site-nav-link current">Студія</a></li>
 						<li class="header-nav"><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
 						<li class="header-nav"><a href="" class="site-nav-link">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="auth-nav list">
+				<ul class="auth-nav">
 					<li class="header-nav"><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
 					<li class="header-nav"><a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a></li>
 				</ul>
@@ -42,14 +42,16 @@
 		<main>
 			<!-- Герой -->
 			<section class="hero">
-				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="button hero-button">Замовити послугу</button>
+				<div class="container">
+					<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+					<button type="button" class="button hero-button">Замовити послугу</button>
+				</div>
 			</section>
 			<!-- Особливості -->
 			<section class="section">
-				<div class="container features-position">
+				<div class="container">
 					<h2 class="section-title visually-hidden">Особливості</h2>
-					<ul class="list features-flex">
+					<ul class="features-flex">
 						<li class="features-item">
 							<h3 class="features-title">Увага до деталей</h3>
 							<p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -70,58 +72,61 @@
 				</div>
 			</section>
 			<!-- Чим ми займаємося -->
-			<section class="section">
-				<div class="container competencies-position">
+			<section class="section no-padding">
+				<div class="container">
 					<h2 class="section-title">Чим ми займаємося</h2>
-					<ul class="list competencies-flex">
+					<ul class="competencies-flex">
 						<li class="competencies-item">
-							<img class="image-convert" src="./images/expertise/img0.jpg" width="370" alt="Руки на клавіатурі" />
+							<img src="./images/expertise/img0.jpg" width="370" alt="Руки на клавіатурі" />
 						</li>
 						<li class="competencies-item">
-							<img
-								class="image-convert"
-								src="./images/expertise/img1.jpg"
-								width="370"
-								alt="Дівчина працює на ноутбуці"
-							/>
+							<img src="./images/expertise/img1.jpg" width="370" alt="Дівчина працює на ноутбуці" />
 						</li>
 						<li class="competencies-item">
-							<img class="image-convert" src="./images/expertise/img2.jpg" width="370" alt="Дизайнер з планшетом" />
+							<img src="./images/expertise/img2.jpg" width="370" alt="Дизайнер з планшетом" />
 						</li>
 					</ul>
 				</div>
 			</section>
 			<!-- Наша команда -->
 			<section class="section team-section">
-				<div class="container team-position">
+				<div class="container">
 					<h2 class="section-title">Наша команда</h2>
-					<ul class="team-list list">
+					<ul class="team-list">
 						<div class="team-card-item">
 							<li class="team-item">
-								<img class="image-convert" src="./images/team/img0.jpg" width="270" alt="Ігор Дем'яненко" />
-								<h3 class="team-title">Ігор Дем'яненко</h3>
-								<p class="team-text">Product Designer</p>
+								<img src="./images/team/img0.jpg" width="270" alt="Ігор Дем'яненко" />
+								<div class="team-description">
+									<h3 class="team-title">Ігор Дем'яненко</h3>
+									<p class="team-text">Product Designer</p>
+								</div>
 							</li>
 						</div>
 						<div class="team-card-item">
 							<li class="team-item">
-								<img class="image-convert" src="./images/team/img1.jpg" width="270" alt="Ольга Рєпіна" />
-								<h3 class="team-title">Ольга Рєпіна</h3>
-								<p class="team-text">Frontend Developer</p>
+								<img src="./images/team/img1.jpg" width="270" alt="Ольга Рєпіна" />
+								<div class="team-description">
+									<h3 class="team-title">Ольга Рєпіна</h3>
+									<p class="team-text">Frontend Developer</p>
+								</div>
 							</li>
 						</div>
 						<div class="team-card-item">
 							<li class="team-item">
-								<img class="image-convert" src="./images/team/img2.jpg" width="270" alt="Микола Тарасов" />
-								<h3 class="team-title">Микола Тарасов</h3>
-								<p class="team-text">Marketing</p>
+								<img src="./images/team/img2.jpg" width="270" alt="Микола Тарасов" />
+								<div class="team-description">
+									<h3 class="team-title">Микола Тарасов</h3>
+									<p class="team-text">Marketing</p>
+								</div>
 							</li>
 						</div>
 						<div class="team-card-item">
 							<li class="team-item">
-								<img class="image-convert" src="./images/team/img3.jpg" width="270" alt="Михайло Єрмаков" />
-								<h3 class="team-title">Михайло Єрмаков</h3>
-								<p class="team-text">UI Designer</p>
+								<img src="./images/team/img3.jpg" width="270" alt="Михайло Єрмаков" />
+								<div class="team-description">
+									<h3 class="team-title">Михайло Єрмаков</h3>
+									<p class="team-text">UI Designer</p>
+								</div>
 							</li>
 						</div>
 					</ul>
@@ -130,17 +135,19 @@
 		</main>
 		<!-- Подвал -->
 		<footer class="footer">
-			<div class="container address-position">
+			<div class="container">
 				<a href="./index.html" class="logo logo-footer">Web<span class="logo-light">Studio</span></a>
 				<address class="address-list">
-					<ul class="address-nav list">
-						<li>
+					<ul class="address-nav">
+						<li class="address-item">
 							<a href="https://goo.gl/maps/egYydY9ZctgNzq4R9" target="_blank" class="address-accent address-nav-link"
 								>м. Київ, пр-т Лесі Українки, 26</a
 							>
 						</li>
-						<li><a href="mailto:info@devstudio.com" class="address-nav-link">info@devstudio.com</a></li>
-						<li><a href="tel:+380961111111" class="address-nav-link">+38 096 111 11 11</a></li>
+						<li class="address-item">
+							<a href="mailto:info@devstudio.com" class="address-nav-link">info@devstudio.com</a>
+						</li>
+						<li class="address-item"><a href="tel:+380961111111" class="address-nav-link">+38 096 111 11 11</a></li>
 					</ul>
 				</address>
 			</div>

@@ -19,7 +19,7 @@
 	--accent-color: #2196f3;
 }
 
-/* General */
+/* ------- GENERAL ------- */
 
 body {
 	color: var(--primary-text-color);
@@ -27,10 +27,26 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
-.list {
+ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
 .section-title {
@@ -62,18 +78,23 @@ body {
 	margin: -1px;
 }
 
-/* Header */
-
-.page-header {
-	border-bottom: 1px solid #eeeeee;
-}
-
 .container {
 	max-width: 1200px;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+/* ------- HEADER ------- */
+
+.page-header {
+	border-bottom: 1px solid #eeeeee;
 }
 
 .header-flex {
@@ -88,7 +109,7 @@ body {
 	align-items: center;
 }
 
-/* logo */
+/* ------- LOGO ------- */
 
 .logo {
 	font-family: "Raleway";
@@ -112,7 +133,7 @@ body {
 	margin-right: 93px;
 }
 
-/* site nav */
+/* ------- SITE NAV ------- */
 
 .site-nav-link {
 	font-weight: 500;
@@ -148,7 +169,7 @@ body {
 	margin-right: 50px;
 }
 
-/* auth nav */
+/* ------- AUTH NAV ------- */
 
 .auth-nav-link {
 	font-weight: 500;
@@ -165,13 +186,14 @@ body {
 	margin-left: auto;
 }
 
-/* hero */
+/* ------- HERO ------- */
 
 .hero {
+	max-width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
 	padding-top: 200px;
-	/* padding-right: 452px; */
 	padding-bottom: 200px;
-	/* padding-left: 452px; */
 	background-color: var(--tertiary-background-color);
 	text-align: center;
 }
@@ -191,12 +213,7 @@ body {
 	color: var(--primary-background-color);
 }
 
-/* features */
-
-.features-position {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
+/* ------- FEATURES ------- */
 
 .features-title {
 	margin-top: 0;
@@ -219,29 +236,24 @@ body {
 	margin-right: 30px;
 }
 
-/* competencies */
+/* ------- COMPETENCIES ------- */
+
+.no-padding {
+	padding-top: 0;
+}
 
 .competencies-flex {
 	display: flex;
-}
-
-.competencies-position {
-	padding-bottom: 94px;
 }
 
 .competencies-item:not(:last-child) {
 	margin-right: 30px;
 }
 
-.image-convert {
-	display: block;
-}
+/* ------- TEAM ------- */
 
-/* team */
-
-.team-position {
-	padding-top: 94px;
-	padding-bottom: 94px;
+.team-section {
+	background-color: var(--secondary-background-color);
 }
 
 .team-list {
@@ -249,8 +261,8 @@ body {
 }
 
 .team-title {
-	margin-top: 30px;
 	font-weight: 500;
+	margin-bottom: 10px;
 }
 
 .team-card-item {
@@ -263,6 +275,11 @@ body {
 	margin-right: 30px;
 }
 
+.team-description {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .team-text,
 .team-title {
 	font-size: 16px;
@@ -271,38 +288,16 @@ body {
 	letter-spacing: 0.03em;
 }
 
-.team-text {
-	margin-bottom: 30px;
-}
-
-.team-section {
-	background-color: var(--secondary-background-color);
-}
-
-/* portfolio */
+/* ------- PORTFOLIO ------- */
 
 .portfolio-btn-position {
 	display: flex;
-	padding-top: 94px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.portfolio-buttonlist-position {
-	display: flex;
-	margin-top: 0;
-	margin-right: auto;
-	margin-left: auto;
-	padding-bottom: 16px;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .portfolio-btn:not(:last-child) {
 	margin-right: 8px;
-}
-
-.portfolio-position {
-	padding-top: 34px;
-	padding-bottom: 94px;
 }
 
 .portfolio-card-position {
@@ -341,7 +336,7 @@ body {
 	letter-spacing: 0.03em;
 }
 
-/* button */
+/* ------- BUTTON ------- */
 
 .button {
 	font-family: inherit;
@@ -379,20 +374,21 @@ body {
 	background-color: #188ce8;
 }
 
-/* footer */
-
-.address-position {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
+/* ------- FOOTER ------- */
 
 .footer {
 	background-color: var(--tertiary-background-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .logo-footer {
 	display: block;
 	margin-bottom: 20px;
+}
+
+.address-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 .address-nav-link {
