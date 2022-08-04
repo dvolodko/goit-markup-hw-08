@@ -100,8 +100,6 @@ p {
 .header-flex {
 	display: flex;
 	align-items: center;
-	padding-top: 24px;
-	padding-bottom: 25px;
 }
 
 .nav-header-flex {
@@ -165,6 +163,18 @@ p {
 	display: flex;
 }
 
+.mail-icon,
+.tel-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+
+.auth-nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .header-nav:not(:last-child) {
 	margin-right: 50px;
 }
@@ -217,31 +227,17 @@ p {
 
 /* ------- FEATURES ------- */
 
-.features-item::before {
-	display: block;
-	content: "";
+.features-icon-bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 120px;
 	background-color: #f5f4fa;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 4px;
 	margin-bottom: 30px;
+	border-radius: 4px;
 }
 
-.features-item:nth-child(1)::before {
-	background-image: url(../images/features/svg/antenna.svg);
-}
-
-.features-item:nth-child(2)::before {
-	background-image: url(../images/features/svg/clock.svg);
-}
-
-.features-item:nth-child(3)::before {
-	background-image: url(../images/features/svg/diagram.svg);
-}
-
-.features-item:nth-child(4)::before {
-	background-image: url(../images/features/svg/astronaut.svg);
+.features-icon {
 }
 
 .features-title {
