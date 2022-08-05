@@ -332,11 +332,12 @@ p {
 .team-social-link:hover,
 .team-social-link:focus {
 	background-color: var(--accent-color);
+	color: var(--primary-background-color);
 }
 
 .team-social-link:hover .icon-social,
 .team-social-link:focus .icon-social {
-	fill: var(--primary-background-color);
+	fill: currentColor;
 }
 
 .icon-social {
@@ -529,10 +530,11 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: var(--primary-background-color);
 }
 
 .footer-icon-social {
-	fill: var(--primary-background-color);
+	fill: currentColor;
 }
 
 .footer-social-link:hover,
