@@ -144,6 +144,7 @@ body {
 /* ------- SITE NAV ------- */
 
 .site-nav-link {
+	display: block;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -162,14 +163,40 @@ body {
 .address-nav-link:hover,
 .address-nav-link:focus {
 	color: var(--accent-color);
-	transition: color 250ms var(--cubic-bezier);
 }
 
 .current {
+	position: relative;
 	color: var(--accent-color);
 }
 
+.not-current {
+	position: relative;
+	overflow: hidden;
+}
+
+.not-current::after {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	border: 2px solid var(--accent-color);
+	transform: translateY(100%);
+	transition: transform 250ms var(--cubic-bezier);
+}
+
+.not-current:hover.not-current::after,
+.not-current:focus.not-current::after {
+	transform: translateY(0);
+}
+
 .current::after {
+	position: absolute;
+	bottom: 0;
+	display: block;
 	content: "";
 	width: 100%;
 	height: 4px;
@@ -387,7 +414,6 @@ body {
 .team-social-link:focus {
 	background-color: var(--accent-color);
 	color: var(--primary-background-color);
-	transition: background-color 250ms var(--cubic-bezier);
 }
 
 .icon-social {
@@ -398,7 +424,6 @@ body {
 .team-social-link:hover .icon-social,
 .team-social-link:focus .icon-social {
 	fill: currentColor;
-	transition: color 250ms var(--cubic-bezier);
 }
 
 /* ------- CLIENTS ------- */
@@ -438,13 +463,11 @@ body {
 	border-style: solid;
 	border-color: var(--accent-color);
 	color: var(--accent-color);
-	transition: border-color 250ms var(--cubic-bezier);
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
 	fill: currentColor;
-	transition: color 250ms var(--cubic-bezier);
 }
 
 /* ------- PORTFOLIO ------- */
@@ -519,7 +542,6 @@ body {
 .portfolio-card-link:hover .portfolio-overlay,
 .portfolio-card-link:focus .portfolio-overlay {
 	transform: translateY(0);
-	transition: transform 250ms var(--cubic-bezier);
 }
 
 .portfolio-title {
@@ -572,15 +594,12 @@ body {
 .button:focus {
 	color: var(--primary-background-color);
 	background-color: var(--accent-color);
-	transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier),
-		box-shadow 250ms var(--cubic-bezier);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .hero-button:hover,
 .hero-button:focus {
 	background-color: #188ce8;
-	transition: background-color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
 }
 
 /* ------- FOOTER ------- */
@@ -658,7 +677,6 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
 	background-color: var(--accent-color);
-	transition: background-color 250ms var(--cubic-bezier);
 }
 
 /* ------- MODAL WINDOW ------- */
@@ -683,8 +701,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	min-height: 581px;
-	min-width: 528px;
+	min-height: 350px;
+	min-width: 400px;
 	background-color: var(--primary-background-color);
 	border-radius: 4px;
 }
