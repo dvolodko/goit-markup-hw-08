@@ -689,6 +689,8 @@ body {
 	height: 100%;
 	z-index: 2;
 	background-color: rgba(0, 0, 0, 0.2);
+	opacity: 1;
+	transition: opacity 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -696,15 +698,20 @@ body {
 	pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(1.1);
+}
+
 .modal {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	min-height: 350px;
-	min-width: 400px;
+	min-height: 581px;
+	min-width: 528px;
 	background-color: var(--primary-background-color);
 	border-radius: 4px;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 250ms var(--cubic-bezier);
 }
 
 .close-btn {
