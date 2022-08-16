@@ -474,6 +474,39 @@
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
+				<strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
+				<form class="js-speaker-form">
+					<label for="name">Им'я</label>
+					<input type="text" name="name" id="name" />
+
+					<label for="tel">Телефон</label>
+					<input type="tel" name="tel" id="tel" />
+
+					<label for="email">Пошта</label>
+					<input type="email" name="email" id="email" />
+
+					<div role="group">
+						<input type="checkbox" name="topic" value="html" id="html" />
+						<label for="html">HTML</label>
+
+						<input type="checkbox" name="topic" value="css" id="css" />
+						<label for="css">CSS</label>
+
+						<input type="checkbox" name="topic" value="javascript" id="javascript" />
+						<label for="JavaScript">JavaScript</label>
+					</div>
+
+					<div role="group">
+						<input type="radio" name="experience" value="junior" id="junior" />
+						<label for="junior">Junior</label>
+						<input type="radio" name="experience" value="middle" id="middle" />
+						<label for="middle">Middle</label>
+						<input type="radio" name="experience" value="senior" id="senior" />
+						<label for="senior">Senior</label>
+					</div>
+
+					<button type="submit">Залишити заявку</button>
+				</form>
 				<div class="close-btn" data-modal-close>
 					<svg class="close-icon" width="18" height="18">
 						<use href="./images/svg/icomoon/optimised/symbol-defs.svg#icon-close-black"></use>
@@ -482,5 +515,14 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script>
+			(() => {
+				document.querySelector(".js-speaker-form").addEventListener("submit", e => {
+					e.preventDefault();
+
+					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+				});
+			})();
+		</script>
 	</body>
 </html>
