@@ -825,6 +825,10 @@ textarea {
 	margin-bottom: 10px;
 }
 
+.form-field.comment-field {
+	margin-bottom: 20px;
+}
+
 .form-field label {
 	margin-bottom: 4px;
 	color: var(--primary-text-color);
@@ -847,7 +851,7 @@ textarea {
 	margin: 0;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	transition: outline-color 250ms var(--cubic-bezier);
+	transition: border-color 250ms var(--cubic-bezier);
 }
 
 .form-field textarea {
@@ -871,7 +875,8 @@ textarea {
 
 .form-field input:focus,
 .form-field textarea:focus {
-	outline: 1px solid var(--accent-color);
+	outline: none;
+	border-color: var(--accent-color);
 }
 
 .form-field input:focus + .input-icon {
