@@ -1,0 +1,48 @@
+body {
+	color: $primary-text-color;
+	background-color: $primary-background-color;
+	font-family: $font-main;
+	padding-top: 81px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+.section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $secondary-text-color;
+}
+
+.features-title,
+.team-title,
+.portfolio-title {
+	color: $secondary-text-color;
+}
+
+textarea {
+	resize: none;
+}

@@ -1,0 +1,103 @@
+// -------SITE NAV
+
+.site-nav-link {
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: $secondary-text-color;
+	transition: color 250ms $cubic-bezier;
+	text-decoration: none;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus,
+.address-nav-link:hover,
+.address-nav-link:focus {
+	color: $accent-color;
+}
+
+.current {
+	position: relative;
+	color: $accent-color;
+}
+
+.not-current {
+	position: relative;
+}
+
+.not-current::after {
+	position: absolute;
+	bottom: -1px;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+	transform: scaleX(0.4);
+	opacity: 0;
+	transition: transform 250ms $cubic-bezier, opacity 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+}
+
+.not-current:hover.not-current::after,
+.not-current:focus.not-current::after {
+	transform: scale(1);
+	opacity: 1;
+	border-color: $accent-color;
+}
+
+.current::after {
+	position: absolute;
+	bottom: -1px;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	border: 2px solid $accent-color;
+}
+
+.site-nav,
+.auth-nav,
+.features-flex {
+	display: flex;
+}
+
+.mail-icon,
+.tel-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+
+.header-nav:not(:last-child) {
+	margin-right: 50px;
+}
+
+// -------AUTH NAV
+
+.auth-nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: $primary-text-color;
+	transition: color 250ms $cubic-bezier;
+	text-decoration: none;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.auth-nav {
+	margin-left: auto;
+}

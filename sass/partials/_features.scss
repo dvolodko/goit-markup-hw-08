@@ -1,0 +1,30 @@
+.features-icon-bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+.features-title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.features-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+
+.features-item:not(:last-child) {
+	margin-right: 30px;
+}

@@ -1,0 +1,35 @@
+.no-padding {
+	padding-top: 0;
+}
+
+.expertise-flex {
+	display: flex;
+}
+
+.expertise-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.expertise-thumb {
+	position: relative;
+}
+
+.expertise-overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(47, 48, 58, 0.8);
+}
+
+.expertise-overlay-title {
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $primary-background-color;
+}
