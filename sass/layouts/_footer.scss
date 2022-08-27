@@ -28,6 +28,11 @@
 	text-decoration: none;
 }
 
+.address-nav-link:hover,
+.address-nav-link:focus {
+	color: $accent-color;
+}
+
 .address-accent {
 	color: $primary-background-color;
 }

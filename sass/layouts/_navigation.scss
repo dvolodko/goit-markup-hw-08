@@ -1,0 +1,101 @@
+// -------NAVIGATION
+
+.navigation {
+	display: flex;
+	align-items: center;
+	&__list {
+		display: flex;
+	}
+	&__item:not(:last-child) {
+		margin-right: 50px;
+	}
+	&__link {
+		display: block;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: $secondary-text-color;
+		transition: color 250ms $cubic-bezier;
+		text-decoration: none;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+}
+
+.navigation__link--active {
+	position: relative;
+	color: $accent-color;
+	&::after {
+		position: absolute;
+		bottom: -1px;
+		display: block;
+		content: "";
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		border: 2px solid $accent-color;
+	}
+}
+
+.navigation__link--not-active {
+	position: relative;
+	&::after {
+		position: absolute;
+		bottom: -1px;
+		display: block;
+		content: "";
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #000000;
+		transform: scaleX(0.4);
+		opacity: 0;
+		transition: transform 250ms $cubic-bezier, opacity 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+	}
+}
+
+.navigation__link--not-active:hover.navigation__link--not-active::after,
+.navigation__link--not-active:focus.navigation__link--not-active::after {
+	transform: scale(1);
+	opacity: 1;
+	border-color: $accent-color;
+}
+
+// -------CONTACTS
+
+.contacts {
+	display: flex;
+	margin-left: auto;
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: $primary-text-color;
+		transition: color 250ms $cubic-bezier;
+		text-decoration: none;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+	&__item:not(:last-child) {
+		margin-right: 50px;
+	}
+	&__icon {
+		fill: currentColor;
+		margin-right: 10px;
+	}
+}

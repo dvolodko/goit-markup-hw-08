@@ -1,18 +1,12 @@
-.page-header {
+.header {
 	position: fixed;
 	width: 100%;
 	top: 0;
 	background-color: $primary-background-color;
 	z-index: 1;
 	border-bottom: 1px solid #eeeeee;
-}
-
-.header-flex {
-	display: flex;
-	align-items: center;
-}
-
-.nav-header-flex {
-	display: flex;
-	align-items: center;
+	&__flex {
+		display: flex;
+		align-items: center;
+	}
 }
