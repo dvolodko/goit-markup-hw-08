@@ -27,7 +27,7 @@ p {
 	margin: 0;
 }
 
-.section-title {
+%section-title {
 	margin-top: 0;
 	margin-bottom: 50px;
 	font-size: 36px;
@@ -37,8 +37,10 @@ p {
 	color: $secondary-text-color;
 }
 
-.features-title,
-.team-title,
+%section-subtitle {
+	color: $secondary-text-color;
+}
+
 .portfolio-title {
 	color: $secondary-text-color;
 }

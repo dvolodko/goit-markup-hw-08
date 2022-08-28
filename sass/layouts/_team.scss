@@ -1,77 +1,40 @@
-.team-section {
-	background-color: $secondary-background-color;
-}
-
-.team-list {
-	display: flex;
-}
-
-.team-title {
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-
-.team-text {
-	margin-bottom: 16px;
-}
-
-.team-card-item {
-	background-color: $primary-background-color;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
-}
-
-.team-card-item:not(:last-child) {
-	margin-right: 30px;
-}
-
-.team-description {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.team-text,
-.team-title {
+%team-font {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
 
-.team-social-list {
-	display: flex;
-	justify-content: center;
-	gap: 10px;
-}
-
-.team-social-item {
-	width: 44px;
-	height: 44px;
-}
-
-.team-social-link {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #afb1b8;
-	transition: background-color 250ms $cubic-bezier;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-	background-color: $accent-color;
-	color: $primary-background-color;
-}
-
-.icon-social {
-	fill: currentColor;
-	transition: color 250ms $cubic-bezier;
-}
-
-.team-social-link:hover .icon-social,
-.team-social-link:focus .icon-social {
-	fill: currentColor;
+.team {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	background-color: $secondary-background-color;
+	&__title {
+		@extend %section-title;
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		background-color: $primary-background-color;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 0px 0px 4px 4px;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__description {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	&__name {
+		@extend %team-font;
+		font-weight: 500;
+		color: $secondary-text-color;
+		margin-bottom: 10px;
+	}
+	&__role {
+		@extend %team-font;
+		margin-bottom: 16px;
+	}
 }

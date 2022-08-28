@@ -13,11 +13,15 @@
 	border-radius: 4px;
 	padding: 6px 22px;
 	box-shadow: 0;
+	&:hover,
+	&:focus {
+		color: $primary-background-color;
+		background-color: $accent-color;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	}
 }
 
-.hero-button,
-.form-btn,
-.footer-email-btn {
+%button-accent {
 	font-weight: 700;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
@@ -26,38 +30,40 @@
 	transition: background-color 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
 }
 
-.hero-button {
+.hero__button {
+	@extend %button-accent;
 	padding: 10px 32px;
+	&:hover,
+	&:focus {
+		background-color: #188ce8;
+	}
 }
 
-.form-btn {
-	padding: 10px 52px;
-}
-
-.footer-email-btn {
+.mailing__button {
+	@extend %button-accent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 10px 28px;
+	&:hover,
+	&:focus {
+		background-color: #188ce8;
+	}
 }
 
-.send-icon {
+.button__icon {
 	margin-left: 10px;
 	fill: $primary-background-color;
 }
 
-.button:hover,
-.button:focus {
-	color: $primary-background-color;
-	background-color: $accent-color;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.hero-button:hover,
-.hero-button:focus,
-.form-btn:hover,
-.form-btn:focus,
-.footer-email-btn:hover,
-.footer-email-btn:focus {
-	background-color: #188ce8;
+.form__button {
+	@extend %button-accent;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 52px;
+	&:hover,
+	&:focus {
+		background-color: #188ce8;
+	}
 }
