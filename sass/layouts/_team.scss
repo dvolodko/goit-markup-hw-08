@@ -5,36 +5,36 @@
 	letter-spacing: 0.03em;
 }
 
-.team {
-	padding-top: 94px;
-	padding-bottom: 94px;
+.section--secondary-bg-color {
 	background-color: $secondary-background-color;
-	&__title {
-		@extend %section-title;
+}
+
+.team {
+	display: flex;
+}
+
+.team__item {
+	background-color: $primary-background-color;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	&:not(:last-child) {
+		margin-right: 30px;
 	}
-	&__list {
-		display: flex;
-	}
-	&__item {
-		background-color: $primary-background-color;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-		border-radius: 0px 0px 4px 4px;
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
-	}
-	&__description {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	&__name {
-		@extend %team-font;
-		font-weight: 500;
-		color: $secondary-text-color;
-		margin-bottom: 10px;
-	}
-	&__role {
-		@extend %team-font;
-		margin-bottom: 16px;
-	}
+}
+
+.team__description {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.team__title {
+	@extend %team-font;
+	font-weight: 500;
+	color: $secondary-text-color;
+	margin-bottom: 10px;
+}
+
+.team__text {
+	@extend %team-font;
+	margin-bottom: 16px;
 }

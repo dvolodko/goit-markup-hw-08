@@ -5,10 +5,11 @@
 	background-color: $primary-background-color;
 	z-index: 1;
 	border-bottom: 1px solid #eeeeee;
-	&__flex {
-		display: flex;
-		align-items: center;
-	}
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
 }
 
 .navigation__logo {
