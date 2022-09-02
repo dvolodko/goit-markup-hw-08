@@ -39,6 +39,9 @@
 	&:focus {
 		background-color: #188ce8;
 	}
+	@include mq(desktop) {
+		padding: 10px 32px;
+	}
 }
 
 .mailing__button {

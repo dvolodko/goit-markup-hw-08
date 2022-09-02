@@ -1,12 +1,23 @@
 .features {
 	display: flex;
+	flex-direction: column;
+	gap: $gap;
+	@include mq(tablet) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 
-.features__item:not(:last-child) {
-	margin-right: 30px;
+.features__item {
+	@include mq(tablet) {
+		flex-basis: calc((100% - 1 * $gap) / 2);
+	}
+	@include mq(desktop) {
+		flex-basis: calc((100% - 3 * $gap) / 4);
+	}
 }
 
-.features__icon-bg {
+.features__thumb {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -24,6 +35,9 @@
 	line-height: 1.14;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
+	@include mq(mobile-only) {
+		text-align: center;
+	}
 }
 
 .features__text {

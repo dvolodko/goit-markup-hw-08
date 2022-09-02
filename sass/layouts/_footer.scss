@@ -16,7 +16,10 @@
 
 .footer__flex {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: baseline;
+	text-align: center;
+	justify-content: center;
 }
 
 .footer__navigation {
@@ -60,7 +63,7 @@
 }
 
 .mailing {
-	width: 570px;
+	// width: 570px;
 	margin-left: auto;
 }
 
@@ -70,6 +73,8 @@
 
 .mailing__flex {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .mailing__input {

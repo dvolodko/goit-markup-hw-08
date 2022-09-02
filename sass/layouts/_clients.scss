@@ -1,11 +1,18 @@
 .clients {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: $gap;
 }
 
 .clients__item {
-	width: calc((100% - (5 * 30px)) / 6);
+	flex-basis: calc((100% - 1 * $gap) / 2);
 	height: 92px;
+	@include mq(tablet) {
+		flex-basis: calc((100% - 2 * $gap) / 3);
+	}
+	@include mq(desktop) {
+		flex-basis: calc((100% - 5 * $gap) / 6);
+	}
 }
 
 .clients__link {
