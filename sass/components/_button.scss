@@ -31,8 +31,10 @@
 }
 
 .hero__button {
+	display: block;
 	@extend %button-accent;
-	padding: 10px 32px;
+	padding: 10px 24px;
+	margin: 0 auto;
 	&:hover,
 	&:focus {
 		background-color: #188ce8;
@@ -51,11 +53,6 @@
 	}
 }
 
-.button__icon {
-	margin-left: 10px;
-	fill: $primary-background-color;
-}
-
 .form__button {
 	@extend %button-accent;
 	display: block;
@@ -66,4 +63,9 @@
 	&:focus {
 		background-color: #188ce8;
 	}
+}
+
+.button__icon {
+	margin-left: 10px;
+	fill: $primary-background-color;
 }

@@ -62,6 +62,16 @@ textarea {
   margin: -1px;
 }
 
+header,
+footer,
+section {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -107,7 +117,9 @@ textarea {
 }
 
 .hero__button {
-  padding: 10px 32px;
+  display: block;
+  padding: 10px 24px;
+  margin: 0 auto;
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
@@ -123,11 +135,6 @@ textarea {
   background-color: #188ce8;
 }
 
-.button__icon {
-  margin-left: 10px;
-  fill: #ffffff;
-}
-
 .form__button {
   display: block;
   margin-right: auto;
@@ -136,6 +143,11 @@ textarea {
 }
 .form__button:hover, .form__button:focus {
   background-color: #188ce8;
+}
+
+.button__icon {
+  margin-left: 10px;
+  fill: #ffffff;
 }
 
 .social {
@@ -312,26 +324,25 @@ textarea {
 
 .hero {
   max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-background-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
-  text-align: center;
+  background-size: cover;
 }
+
 .hero__title {
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
-  max-width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
