@@ -10,8 +10,45 @@
 .header__container {
 	display: flex;
 	align-items: center;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	@include mq(tablet) {
+		padding-top: 19px;
+		padding-bottom: 21px;
+	}
+	@include mq(desktop) {
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
 }
 
 .navigation__logo {
-	margin-right: 93px;
+	@include mq(tablet) {
+		margin-right: 87px;
+	}
+	@include mq(desktop) {
+		margin-right: 92px;
+	}
+}
+
+.menu-toggle {
+	margin-left: auto;
+	background-color: transparent;
+	border: none;
+}
+
+.mobile-menu {
+	position: fixed;
+	background-color: $primary-background-color;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 48px 40px;
+}
+
+.header__mob-menu-close-icon {
+	position: absolute;
+	top: 10px;
+	right: 15px;
 }

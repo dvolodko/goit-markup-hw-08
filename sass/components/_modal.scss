@@ -41,6 +41,10 @@
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
 	padding: 40px;
+	@include mq(desktop) {
+		height: 581px;
+		width: 528px;
+	}
 }
 
 .modal__title {

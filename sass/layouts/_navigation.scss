@@ -6,7 +6,7 @@
 }
 
 .navigation__list {
-	display: flex;
+	display: none;
 }
 
 .navigation__item:not(:last-child) {
@@ -22,8 +22,6 @@
 	color: $secondary-text-color;
 	transition: color 250ms $cubic-bezier;
 	text-decoration: none;
-	padding-top: 32px;
-	padding-bottom: 32px;
 	&:hover,
 	&:focus {
 		color: $accent-color;
@@ -74,7 +72,7 @@
 // -------CONTACTS
 
 .contacts {
-	display: flex;
+	display: none;
 	margin-left: auto;
 }
 
@@ -89,8 +87,6 @@
 	color: $primary-text-color;
 	transition: color 250ms $cubic-bezier;
 	text-decoration: none;
-	padding-top: 32px;
-	padding-bottom: 32px;
 	&:hover,
 	&:focus {
 		color: $accent-color;

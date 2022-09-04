@@ -2,7 +2,10 @@ body {
 	color: $primary-text-color;
 	background-color: $primary-background-color;
 	font-family: $font-main;
-	padding-top: 81px;
+	padding-top: 61px;
+	@include mq(tablet) {
+		padding-top: 81px;
+	}
 }
 
 ul {
