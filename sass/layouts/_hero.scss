@@ -5,25 +5,25 @@
 	padding-bottom: 118px;
 
 	background-color: #c4c4c4;
-	background-image: $linear-gradient, url("../../images/hero/hero-bg-image-mob.jpg");
+	background-image: $linear-gradient, url("./images/hero/hero-bg-image-mob.jpg");
 	@include mq(retina) {
-		background-image: $linear-gradient, url("../../images/hero/hero-bg-image-mob-2x.jpg");
+		background-image: $linear-gradient, url("./images/hero/hero-bg-image-mob-2x.jpg");
 	}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	@include mq(tablet) {
-		background-image: $linear-gradient, url("../../images/hero/hero-bg-image-tablet.jpg");
+		background-image: $linear-gradient, url("/images/hero/hero-bg-image-tablet.jpg");
 		@include mq(retina) {
-			background-image: $linear-gradient, url("../../images/hero/hero-bg-image-tablet-2x.jpg");
+			background-image: $linear-gradient, url("/images/hero/hero-bg-image-tablet-2x.jpg");
 		}
 	}
 	@include mq(desktop) {
 		padding-top: 200px;
 		padding-bottom: 200px;
-		background-image: $linear-gradient, url("../../images/hero/hero-bg-image.jpg");
+		background-image: $linear-gradient, url("/images/hero/hero-bg-image.jpg");
 		@include mq(retina) {
-			background-image: $linear-gradient, url("../../images/hero/hero-bg-image-2x.jpg");
+			background-image: $linear-gradient, url("/images/hero/hero-bg-image-2x.jpg");
 		}
 	}
 }
