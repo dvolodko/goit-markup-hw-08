@@ -74,16 +74,6 @@ textarea {
   margin: -1px;
 }
 
-header,
-footer,
-section {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -238,14 +228,8 @@ section {
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    padding-top: 19px;
-    padding-bottom: 21px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__container {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -260,26 +244,104 @@ section {
   }
 }
 
-.menu-toggle {
-  margin-left: auto;
-  background-color: transparent;
-  border: none;
+@media screen and (max-width: 767.98px) {
+  .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .mobile-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__mob-menu-close-icon {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__navigation {
+  margin-bottom: auto;
+}
+
+.mobile-menu__navigation-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__navigation-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.mobile-menu__navigation-link--active {
+  color: #2196f3;
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__tel-link {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.mobile-menu__email-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.mobile-menu__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu__social-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-menu__social-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
 }
 
 .logo {
@@ -311,8 +373,15 @@ section {
   align-items: center;
 }
 
-.navigation__list {
-  display: none;
+@media screen and (max-width: 767.98px) {
+  .navigation__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -321,6 +390,8 @@ section {
 
 .navigation__link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -374,9 +445,25 @@ section {
   border-color: #2196f3;
 }
 
-.contacts {
-  display: none;
-  margin-left: auto;
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .contacts__link {
@@ -395,8 +482,22 @@ section {
   color: #2196f3;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .contacts__icon {

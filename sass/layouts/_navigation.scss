@@ -6,7 +6,12 @@
 }
 
 .navigation__list {
-	display: none;
+	@include mq(mobile-only) {
+		display: none;
+	}
+	@include mq(tablet) {
+		display: flex;
+	}
 }
 
 .navigation__item:not(:last-child) {
@@ -15,6 +20,8 @@
 
 .navigation__link {
 	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -72,8 +79,20 @@
 // -------CONTACTS
 
 .contacts {
-	display: none;
-	margin-left: auto;
+	@include mq(mobile-only) {
+		display: none;
+	}
+	@include mq(tablet) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-left: auto;
+	}
+	@include mq(desktop) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 .contacts__link {
@@ -93,8 +112,20 @@
 	}
 }
 
+.contacts__item {
+	@include mq(tablet) {
+		margin-right: auto;
+	}
+}
+
 .contacts__item:not(:last-child) {
-	margin-right: 50px;
+	@include mq(tablet) {
+		margin-bottom: 12px;
+	}
+	@include mq(desktop) {
+		margin-bottom: 0;
+		margin-right: 50px;
+	}
 }
 
 .contacts__icon {

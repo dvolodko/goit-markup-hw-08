@@ -57,11 +57,86 @@
 						>
 					</li>
 				</ul>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="header__mob-menu-open-icon" width="40" height="40">
+						<use href="./images/svg/icomoon/optimised/symbol-defs.svg#menu_40px"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="mobile-menu js-menu-container" id="mobile-menu">
+				<button class="menu-toggle js-close-menu">
+					<svg class="header__mob-menu-close-icon" width="40" height="40">
+						<use href="./images/svg/icomoon/optimised/symbol-defs.svg#close_40px"></use>
+					</svg>
+				</button>
+				<nav class="mobile-menu__navigation">
+					<ul class="mobile-menu__navigation-list">
+						<li class="mobile-menu__navigation-item">
+							<a href="./index.html" class="mobile-menu__navigation-link mobile-menu__navigation-link--not-active"
+								>Студія</a
+							>
+						</li>
+						<li class="mobile-menu__navigation-item">
+							<a href="./portfolio.html" class="mobile-menu__navigation-link mobile-menu__navigation-link--active"
+								>Портфоліо</a
+							>
+						</li>
+						<li class="mobile-menu__navigation-item">
+							<a href="" class="mobile-menu__navigation-link mobile-menu__navigation-link--not-active">Контакти</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="mobile-menu__contacts">
+					<a href="tel:+380961111111" class="mobile-menu__tel-link">+38 096 111 11 11</a>
+					<a href="mailto:info@devstudio.com" class="mobile-menu__email-link">info@devstudio.com</a>
+				</div>
+				<ul class="mobile-menu__social">
+					<li class="mobile-menu__social-item">
+						<a
+							href="https://www.instagram.com/"
+							class="mobile-menu__social-link"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							aria-label="instagram"
+							>Instagram</a
+						>
+					</li>
+					<li class="mobile-menu__social-item">
+						<a
+							href="https://twitter.com/"
+							class="mobile-menu__social-link"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							aria-label="twitter"
+							>Twitter</a
+						>
+					</li>
+					<li class="mobile-menu__social-item">
+						<a
+							href="https://www.facebook.com/"
+							class="mobile-menu__social-link"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							aria-label="facebook"
+							>Facebook</a
+						>
+					</li>
+					<li class="mobile-menu__social-item">
+						<a
+							href="https://www.linkedin.com/"
+							class="mobile-menu__social-link"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							aria-label="linkedin"
+							>Linkedin</a
+						>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<!-- Портфоліо -->
 		<main>
-			<section class="section visible">
+			<section class="section">
 				<div class="container">
 					<h1 class="section__title visually-hidden">Портфоліо</h1>
 					<ul class="portfolio-filter">
@@ -361,7 +436,7 @@
 		<footer class="footer">
 			<div class="container footer__flex">
 				<div class="footer__navigation">
-					<a href="./index.html" class="logo footer__logo">Web<span class="logo--light">Studio</span></a>
+					<a href="./index.html" class="logo footer__logo">Web<span class="logo__light">Studio</span></a>
 					<address class="address">
 						<ul>
 							<li class="address__item">
@@ -379,7 +454,7 @@
 						</ul>
 					</address>
 				</div>
-				<div>
+				<div class="footer__social">
 					<strong class="footer__join">Приєднуйтесь</strong>
 					<ul class="social">
 						<li class="social__item">
