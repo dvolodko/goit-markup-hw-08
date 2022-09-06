@@ -45,6 +45,9 @@
 
 .footer__social {
 	margin-bottom: 60px;
+	@include mq(tablet) {
+		margin-bottom: 0;
+	}
 }
 
 .footer__join {

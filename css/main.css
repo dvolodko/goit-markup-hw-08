@@ -221,6 +221,7 @@ textarea {
 }
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
   padding-top: 16px;
@@ -938,6 +939,11 @@ textarea {
 
 .footer__social {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-bottom: 0;
+  }
 }
 
 .address__item:not(:last-child) {
